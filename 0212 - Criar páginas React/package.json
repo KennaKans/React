@@ -1,0 +1,22 @@
+{
+  "name": "0212",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.19.5",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "scheduler": "^0.23.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "esbuild --bundle --loader:.js=jsx src/main.js --outfile=main.js --servedir=./ --watch",
+    "build": "esbuild --bundle --loader:.js=jsx src/main.js --outfile=main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
