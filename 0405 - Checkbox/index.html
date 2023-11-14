@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    new EventSource('/esbuild').addEventListener('change', () =>
+      location.reload(),
+    );
+  </script>
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
+
+<!--
+// Faça um fetch (POST) para a API abaixo
+// Para a criação ser aceita é necessário enviar dodos de:
+// nome, email, senha, cep, rua, numero, bairro, cidade e estado
+
+// Essa é a função utilizado para realizar o POST
+fetch('https://ranekapi.origamid.dev/json/api/usuario', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  // form é o objeto com os dados do formulário
+  body: JSON.stringify(form),
+});
+
+// Mostre uma mensagem na tela, caso a resposta da API seja positiva
+-->
